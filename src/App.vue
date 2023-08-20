@@ -3,7 +3,7 @@
     <div class="window">
       <div class="upper-section-window">
         <span class="title">Country quiz</span>
-        <img class="world-logo" src="/undraw_adventure_4hum 1.svg" v-show="isPlaying">
+        <img class="world-logo" src="./assets/undraw_adventure_4hum 1.svg" v-show="isPlaying">
       </div>
 
       <template v-if="targetCountry && isPlaying">
@@ -22,7 +22,7 @@
       </template>
 
       <template v-if="!selectedOptionWasCorrect && !isPlaying">
-        <img src="/undraw_winners_ao2o 2.svg" alt="Your record" class="trophy-svg">
+        <img src="./assets/undraw_winners_ao2o 2.svg" alt="Your record" class="trophy-svg">
         <span class="title">Results</span>
         <p>You got <span class="corrects-answers">{{ correctAnswers }}</span> correct answers</p>
         <button class="try-again" @click="startNewGame">Try again</button>
